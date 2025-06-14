@@ -1,0 +1,24 @@
+kafka:
+  bootstrap_servers: localhost:9092
+  group_id: kafka_consumer_group
+  auto_offset_reset: earliest
+  topics:
+    - postgres.public.users
+    - postgres.public.orders
+
+postgres:
+  host: localhost
+  port: 5432
+  database: postgres
+  user: postgres
+  password: postgres
+
+prometheus:
+  host: localhost
+  port: 9090
+
+grafana:
+  host: localhost
+  port: 3000
+  user: admin
+  password: admin 
